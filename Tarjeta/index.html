@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea tu tarjeta</title>
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" href="css/estilos2.css">
+  <script src="js/funcion.js"></script>
+
+</head>
+<body>
+    <header>
+    <nav class="menu-fixed">
+      <ul>
+        <li><a href="#">Crea tu Tarjeta de Felicitacion</a></li>
+        <li><a href="ejercicios.html">Ejercicios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="todo">
+    <div class="tema">
+      <h3 class="tem">Elige un tema</h3>
+      <label >
+        <nav>
+        <input type="radio" name="a" value="a">Cumpleaños.
+        </nav>
+      <nav>
+        <input type="radio" name="a" value="b">San Valentin.
+      </nav>
+      <nav>
+        <input type="radio" name="a" value="c">Motivación.
+      </nav>
+      </label>
+
+    </div>
+    
+
+    <div class="imaganes">
+      <h3 class="tema">Elige una Imagen</h3>
+      <label >
+        <nav>
+          <img src="imagenes/feliz.jpg" alt="">
+          <input type="radio" name="b" value="a">Cumpleaños
+        </nav>
+      <nav>
+        <img src="imagenes/amor.jpg" alt="">
+        <input type="radio" name="b" value="b">San Valentin
+      </nav>
+      <nav>
+        <img src="imagenes/motivacion.jpg" alt="">
+        <input type="radio" name="b" value="c">Motivación
+      </nav>
+      
+    </label>
+    </div>
+
+    <div class="datos">
+      <h3 class="tema2">Mensaje</h3>
+      <label>
+      <input type="text" name="" id="titulom" placeholder="Titulo:">
+      <input type="text" name="" id="subtitulom" placeholder="Subtitulo:">
+      <input type="text" name="" id="autorm" placeholder="Autor:">
+      <input type="date" name="" id="fecham" placeholder="Fecha:">
+      <textarea name="" id="mensajem" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+      </label>
+    </div>
+    <div class="colores">
+      <h3>Color de Fondo</h3>
+      <input type="radio" style="display: none ;" name="color" value="a" id="ac">
+      <input type="radio" style="display: none ;" name="color" value="b" id="bc">
+      <input type="radio" style="display: none ;" name="color" value="c" id="cc">
+      <input type="radio" style="display: none ;" name="color" value="d" id="dc">
+      <label class="rojo" for="ac" ></label>
+      <label class="azul" for="bc" ></label>
+      <label class="verde" for="cc" ></label>
+      <label class="amarillo" for="dc" ></label>
+    </div>
+    <input type="button" value="Generar" onclick="generar()">
+  </section>
+</br>
+</br>
+</br>
+
+  <section style="display: none;" id="carta">
+
+    
+    <h4 id="titulo"></h4>
+    <h2 id="subtitulo"></h2>
+    <img src="" alt="" id="img">
+    <p id="mensaje"></p>
+    <h1 class="h1" id="autor"></h1>
+    <h1 class="h1_1" id="autor">Nos vemos luego :3</h1>
+    <h1 id="fecha"></h1></br>
+    <audio src="audio/feliz.mp3" controls></audio>
+  </section>
+  
+</body>
+</html>
